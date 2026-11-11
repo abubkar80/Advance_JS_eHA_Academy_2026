@@ -1,0 +1,31 @@
+li {
+    color: grey;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding:10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul {
+    max-width: 400px;
+    padding:0;
+}
+
+.tick {
+    visibility: hidden;
+}
+
+li.completed {
+    color: green;
+    /* text-decoration: line-through; */
+}
+
+li.completed .task-text{
+    text-decoration: line-through;
+}
+
+li.completed .tick{
+    visibility: visible;
+}
